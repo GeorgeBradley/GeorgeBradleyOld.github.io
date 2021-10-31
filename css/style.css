@@ -17,13 +17,13 @@ body {
   background: url(../images/uni.jpg) no-repeat center/cover;
   border-radius: 10px;
   width: 100%;
-  padding: 50px;
+  padding: 80px;
 }
 
 .main-header img {
   position: absolute;
   left: 50%;
-  top: 40px;
+  top: 100px;
   -webkit-transform: translate(-50px);
           transform: translate(-50px);
   width: 100px;
@@ -74,6 +74,22 @@ body {
   color: #ee1010;
 }
 
+.about-me .bio {
+  padding: 20px;
+  background-color: #1b7eb8;
+  text-align: center;
+}
+
+.about-me .bio h1 {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.about-me .bio .bio-desc {
+  color: white;
+  padding: 0 20px 5px;
+}
+
 .cards {
   display: -ms-grid;
   display: grid;
@@ -91,13 +107,22 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-radius: 2px;
-  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.card h3 {
+  padding: 10px;
 }
 
 .card p {
   color: white;
   font-size: 12px;
+  padding: 10px;
 }
 
 .card img {
@@ -114,5 +139,32 @@ body {
 
 .card-3 {
   background-color: darkkhaki;
+}
+
+@media only screen and (min-width: 768px) {
+  .cards {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 2265px) {
+  .main-header {
+    padding: 250px;
+  }
+  .main-header img {
+    position: absolute;
+    left: 50%;
+    top: 400px;
+    -webkit-transform: translate(-50px);
+            transform: translate(-50px);
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+  .cards {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
 }
 /*# sourceMappingURL=style.css.map */

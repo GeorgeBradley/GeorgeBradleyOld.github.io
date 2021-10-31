@@ -21,11 +21,11 @@ body {
     border-radius: 10px;
     width:100%;
     
-    padding:50px;
+    padding:80px;
     img {
         position: absolute;
         left:50%;
-        top:40px;
+        top:100px;
         transform:translate(-50px);
         width:100px;
         border-radius: 50%;
@@ -78,8 +78,25 @@ body {
             }
       
     }
+
+    .bio {
+        
+        padding:20px;
+        background-color: rgb(27, 126, 184);
+        text-align: center;
+        h1 {
+            font-size:30px;
+           
+            padding-bottom:10px;
+        }
+        .bio-desc {
+            color:white;
+            padding: 0 20px 5px;
+        }
+    }
    
 }
+
 
 .cards {
 
@@ -89,16 +106,26 @@ body {
     grid-template-columns: repeat(1, 1fr);
 }
 .card {
+   
     display: flex;
     flex-direction: column;
-    border-radius: 2px;
-    padding:20px;
-    p{
+    align-items: center;
+ 
+    width:100%;
+    border-radius: 50px;
+    padding:10px;
+    h3 {
+        padding:10px;
+    }
+    p
+    {
         color:white;
         font-size:12px;
+        padding:10px;
     }
 
     img {
+
         width:50px;
     }
     
@@ -114,4 +141,34 @@ body {
 
 .card-3 {
     background-color: darkkhaki;
+}
+
+@media only screen and (min-width:768px){
+     
+    .cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+   
+
+
+}
+
+@media only screen and (min-width:2265px){
+     .main-header {
+        padding:250px;
+        img {
+            position: absolute;
+            left:50%;
+            top:400px;
+            transform:translate(-50px);
+            width:150px;
+            border-radius: 50%;
+            border:2px solid rgb(255, 255, 255);
+            
+        }
+
+     }
+    .cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
