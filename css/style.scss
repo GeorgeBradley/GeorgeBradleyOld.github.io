@@ -1,0 +1,84 @@
+* 
+{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    
+}
+ul {
+    list-style: none;
+}
+
+body {
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+//Main header
+.main-header {
+
+    background:url(../images/uni.jpg) no-repeat center / cover;
+    border-radius: 10px;
+    width:100%;
+    
+    padding:50px;
+    img {
+        position: absolute;
+        left:50%;
+        top:40px;
+        transform:translate(-50px);
+        width:100px;
+        border-radius: 50%;
+        border:2px solid rgb(255, 255, 255);
+        
+    }
+    
+    }
+
+    .about-me {
+
+    
+        margin:60px 10px;
+        h1 {
+            text-align: center;
+            padding:0 10px;
+        }
+
+        .main-nav {
+
+            position: relative;
+            
+            hr {
+                margin:10px;
+            }
+          
+            
+            .nav-items 
+            {
+                
+                display:flex;
+                justify-content:space-evenly;
+                align-items: center;
+                li {
+                    padding:0 10px;
+        
+                    a 
+                    {
+                        color:rgb(0, 0, 0);
+                        text-decoration: none;
+                        font-size:10px;
+                    } 
+                    a:hover {
+                        
+                        color:rgb(238, 16, 16);
+                        
+                    }
+                }
+               
+            }
+      
+    }
+
+  
+
+}
