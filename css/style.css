@@ -73,4 +73,46 @@ body {
 .about-me .main-nav .nav-items li a:hover {
   color: #ee1010;
 }
+
+.cards {
+  display: -ms-grid;
+  display: grid;
+  gap: 20px;
+  padding: 10px;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 2px;
+  padding: 20px;
+}
+
+.card p {
+  color: white;
+  font-size: 12px;
+}
+
+.card img {
+  width: 50px;
+}
+
+.card-1 {
+  background-color: darkcyan;
+}
+
+.card-2 {
+  background-color: #4abb46;
+}
+
+.card-3 {
+  background-color: darkkhaki;
+}
 /*# sourceMappingURL=style.css.map */
